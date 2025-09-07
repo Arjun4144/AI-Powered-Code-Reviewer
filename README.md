@@ -81,10 +81,6 @@ The frontend will be available at http://localhost:5173
 3. Make your changes
 4. Submit a pull request
 
-## 📄 License
-
-This project is licensed under the ISC License.
-
 ## ⚠️ Important Notes
 
 - Ensure you have a valid Google Gemini API key
