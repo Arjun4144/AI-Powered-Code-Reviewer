@@ -31,7 +31,7 @@ An intelligent code review tool that uses Google's Gemini AI to provide detailed
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/AI-Powered-Code-Reviewer.git
+git clone https://github.com/Arjun4144/AI-Powered-Code-Reviewer.git
 cd AI-Powered-Code-Reviewer
 ```
 
