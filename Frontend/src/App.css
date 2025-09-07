@@ -1,0 +1,117 @@
+/* ========= Base Reset ========= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  background-color: #101114;
+  color: #f1f1f1;
+}
+
+/* ========= Layout ========= */
+main {
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* ========= Panels ========= */
+main .left,
+main .right {
+  flex: 1 1 50%;
+  border-radius: 0.8rem;
+  background-color: #1a1b1e;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #2a2b2f;
+  transition: all 0.2s ease-in-out;
+}
+
+main .left:hover,
+main .right:hover {
+  border-color: #3f40ff;
+  box-shadow: 0 4px 20px rgba(63, 64, 255, 0.2);
+}
+
+/* ========= Code Area ========= */
+.left .code,
+.code pre,
+.code pre code {
+  flex: 1;
+  padding: 1rem;
+  background-color: #0e0f11;
+  border-radius: 0.6rem;
+  font-family: "Fira Code", monospace;
+  color: #dcdcdc;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* ========= Review Button ========= */
+main .left .review {
+  align-self: flex-end;
+  margin: 1rem;
+  background: linear-gradient(135deg, #3f40ff, #6c63ff);
+  color: #ffffff;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 4px 12px rgba(63, 64, 255, 0.4);
+  transition: all 0.25s ease-in-out;
+}
+
+main .left .review:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #6c63ff, #3f40ff);
+}
+
+/* ========= Right (Review Output) ========= */
+main .right {
+  padding: 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  overflow-y: auto;
+}
+
+main .right h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #6c63ff;
+  border-bottom: 1px solid #2a2b2f;
+  padding-bottom: 0.5rem;
+}
+
+main .right .review-item {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #232427;
+  border-radius: 0.6rem;
+  border-left: 3px solid #6c63ff;
+}
+
+main .right .review-item strong {
+  color: #ffffff;
+}
+
+main .right .review-item p {
+  margin-top: 0.3rem;
+  color: #cfcfcf;
+  font-size: 0.9rem;
+}
